@@ -1,13 +1,13 @@
-* {
+:root {
+  --blue-color: #00acdc;
+}
+
+html {
   font-family: Roboto, sans-serif;
   font-weight: 500;
   font-style: normal;
   margin: 0;
   padding: 0;
-}
-
-:root {
-  --blue-color: #00acdc;
 }
 
 body {
@@ -27,11 +27,8 @@ body {
   line-height: 0;
 }
 
-.header_nav {
-  height: 60px;
-}
-
-.header_nav ul {
+.header_nav_contain {
+  margin: 0;
   display: flex;
   list-style: none;
 }
