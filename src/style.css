@@ -20,30 +20,18 @@ body {
   align-items: center;
   justify-content: space-between;
   padding: 0 50px;
+  margin: 0;
 }
 
 .header_logo_link {
-  display: block;
-  line-height: 0;
+  display: flex;
 }
 
 .header_nav_contain {
-  margin: 0;
   display: flex;
   list-style: none;
-}
-
-.header_nav_list {
-  font-size: 12px;
-  text-transform: uppercase;
-}
-
-.header_nav_list:first-child {
-  margin-right: 10px;
-}
-
-.header_nav_list:last-child {
-  margin-left: 10px;
+  padding: 0;
+  margin: 0;
 }
 
 .header_nav_list_link {
@@ -54,10 +42,24 @@ body {
   height: 60px;
   text-decoration: none;
   color: inherit;
+  font-size: 12px;
+  text-transform: uppercase;
 }
 
 .header_nav_list_link:hover {
   color: var(--blue-color);
+}
+
+.header_nav_list:first-child .header_nav_list_link {
+  margin-right: 10px;
+}
+
+.header_nav_list:last-child .header_nav_list_link {
+  margin-left: 10px;
+}
+
+.lint_indent {
+  margin: 0 10px;
 }
 
 .is-active {
@@ -74,8 +76,4 @@ body {
   bottom: 0;
   border-radius: 8px;
   background-color: var(--blue-color);
-}
-
-.nav_item {
-  margin: 0 10px;
 }
